@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&family=Poppins:wght@600&display=swap);
+.calc-display,
+.solar {
+  outline: rgba(0, 0, 0, 0.2) solid 6px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #faf8ea;
+  background-image: linear-gradient(to top, #a18cd1 0, #fbc2eb 100%);
+}
+h1 {
+  font-family: Poppins, sans-serif;
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: clamp(2rem, 13vw, 5rem);
+  max-width: 80vw;
+  background-image: linear-gradient(to top right, #f52967 0, #2180d1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text {
+  font-family: "Hind Madurai", sans-serif;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+.text p:last-of-type {
+  font-size: 1.5em;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+.calc {
+  width: 340px;
+  border: 1px solid;
+  padding: 2em 1em;
+  border-radius: 10px;
+  background: linear-gradient(159deg, #3b66b1 0, #1c6ea4 32%, #305491 100%);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+.solar {
+  height: 40px;
+  background: #3b3b3b;
+  width: 150px;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  border: 1px solid #000;
+}
+.cell {
+  display: inline-block;
+  height: 100%;
+  width: 46px;
+  background: #616060;
+}
+.btn {
+  width: 75px;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px rgb(0 0 0 / 50%);
+}
+.row {
+  width: 100%;
+  display: inherit;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.buttons,
+.is-flex {
+  display: flex;
+}
+.buttons {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 265px;
+  user-select: none;
+}
+.calc-display {
+  font-family: Orbitron, sans-serif;
+  font-size: 0.75em;
+  padding-bottom: 0.75em;
+  position: relative;
+  min-height: 4em;
+  border: 1px solid #000;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  text-align: right;
+  background-color: #c8c6c6;
+}
+#calcDisplay {
+  font-size: 3em;
+  right: -5px;
+  width: 100%;
+  margin-right: 5px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+.bg-red {
+  background: #ff3131;
+}
+.is-color-white {
+  color: #fff;
+}
+.is-capatalized {
+  text-transform: capitalize;
+}
